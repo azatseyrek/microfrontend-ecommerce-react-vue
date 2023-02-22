@@ -1,17 +1,17 @@
 name: deploy-container
 
+workflow_dispatch:
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+
     paths:
       - 'packages/container/**'
 
 defaults:
   run:
     working-directory: packages/container
-
-workflow_dispatch:
 
 jobs:
   build:
