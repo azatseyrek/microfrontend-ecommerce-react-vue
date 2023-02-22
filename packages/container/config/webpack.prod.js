@@ -16,7 +16,7 @@ const prodConfig = {
       name: 'container',
       //   filename: 'remoteEntry.js', // not needed for container
       remotes: {
-        marketing: `marketing@${domain}/marketing/remoteEntry.js`,
+        marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`,
       },
       shared: packageJson.dependencies,
     }),
